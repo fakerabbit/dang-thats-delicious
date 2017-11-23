@@ -1,9 +1,12 @@
-.wrapper.ohnooo
-    - const upDog = dog.toUpperCase();
-    p.hello Hello!! My dog name is #{upDog}
-    span#yo Yo!!
-    img.dog(src="dog.jpg" alt=`${dog.toUpperCase()}`)
+extends layout
 
-h2
-    | Hello
-    em How Are you?
+block content
+    .wrapper.ohnooo
+        - const upDog = dog.toUpperCase();
+        p.hello Hello!! My dog name is #{upDog}
+        span#yo Yo!!
+        img.dog(src="dog.jpg" alt=`${dog.toUpperCase()}`)
+
+    h2
+        | Hello
+        em How Are you?
